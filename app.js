@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
     next();
   });
 
-  app.use('/',function (req, res, next) {
+app.get('/',function (req, res, next) {
     res.send("aaaaaaaaaaaa");
   })
 
