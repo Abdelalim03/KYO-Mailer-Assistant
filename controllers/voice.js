@@ -46,7 +46,11 @@ const voiceController = async (req, res) => {
     
     
   };
-  
+//to do
+  const textToVoice = async (req, res) => {
+
+
+  }
 //   function isAudioFile(fileBuffer) {
 //     const fileTypeResult = fileType(fileBuffer);
 //     return fileTypeResult && (fileTypeResult.mime.startsWith('audio/') || fileTypeResult.mime === 'application/ogg');
