@@ -22,9 +22,10 @@ dotenv.config();
 // }
 
 const voiceController = async (req, res) => {
-    if (!isAudioFile(req.file.mimetype)) {
-      return res.status(400).send('Uploaded file is not an audio file');
-    }
+
+    // if (!isAudioFile(req.file.mimetype)) {
+    //   return res.status(400).send('Uploaded file is not an audio file');
+    // }
     const form = new FormData();
     form.append('file',Buffer.from(req.file.buffer), { filename: req.file.originalname });
     form.append('model', 'whisper-1');
